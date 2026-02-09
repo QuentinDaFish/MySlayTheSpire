@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782efca19a299244c8ffb7126e496327, type: 3}
+  m_Name: Bash
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  CardID: 3
+  CardName: "\u75DB\u51FB"
+  Desc: "\u9020\u6210{attack}\u70B9\u4F24\u5BB3\uFF0C\u7ED9\u4E88{buff}\u5C42\u6613\u4F24"
+  Image: {fileID: 0}
+  CardType: 0
+  Rarity: 0
+  Mana: 2
+  Stats:
+  - id: attack
+    value: 8
+    type: 1
+  - id: buff
+    value: 2
+    type: 0
+  Wrappers:
+  - targetMode: 2
+    effects:
+    - rid: 5643456896547684358
+    - rid: 5643456896547684359
+  references:
+    version: 2
+    RefIds:
+    - rid: 5643456896547684358
+      type: {class: AttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        <damage>k__BackingField:
+          rid: 5643456924677832792
+    - rid: 5643456896547684359
+      type: {class: AddBuffEffect, ns: , asm: Assembly-CSharp}
+      data:
+        <buffType>k__BackingField: 4
+        <stack>k__BackingField:
+          rid: 5643456924677832794
+    - rid: 5643456924677832792
+      type: {class: ValueInt, ns: , asm: Assembly-CSharp}
+      data:
+        id: attack
+    - rid: 5643456924677832794
+      type: {class: ValueInt, ns: , asm: Assembly-CSharp}
+      data:
+        id: buff
