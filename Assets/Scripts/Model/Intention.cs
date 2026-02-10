@@ -5,14 +5,26 @@ using UnityEngine;
 [Serializable]
 public class Intention
 {
-    [field: SerializeField] public int intentionID;
+    [field: SerializeField] public string intentionID;
     [field: SerializeField] public ExposeType exposeType;
-    [field: SerializeField] public List<WrappedEffects> attack;
+    [field: SerializeField] public bool multiAttack;
+    [field: SerializeField] public Effect attack;
     [field: SerializeField] public List<WrappedEffects> toDo;
-    [field: SerializeField] public int goToID;
+    [field: SerializeField] public string goToID;
 }
 
 public enum ExposeType
 {
-
+    Unkown,
+    Attack,
+    AttackDebuff,
+    AttackBuff,
+    Defend,
+    DefendBuff,
+    Buff,
+    Debuff,
+    StrongDebuff,
+    Escape,
+    Sleep,
+    Stun,
 }

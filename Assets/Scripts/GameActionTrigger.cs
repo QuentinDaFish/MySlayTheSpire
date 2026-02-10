@@ -17,10 +17,14 @@ public class OnAttackTrigger : GameActionTrigger
     public override Type ActionType => typeof(AttackGA);
 
     [SerializeField] private string damage = "damage";
+    [SerializeField] private string caster = "caster";
+    [SerializeField] private string targets = "targets";
 
     public override void TryBind(GameAction gameAction, EffectContext ctx)
     {
         AttackGA attackGA = (AttackGA)gameAction;
         ctx.Vars[damage] = attackGA.Damage;
+        ctx.Vars[caster] = attackGA.Caster;
+        ctx.Vars[targets] = attackGA.Targets;
     }
 }

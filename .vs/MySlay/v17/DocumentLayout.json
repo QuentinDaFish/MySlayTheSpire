@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\Unity\\MySlay\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\system\\buffsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\buffsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\data\\buffdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\buffdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\gameactiontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameactiontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\data\\buffdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\buffdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +30,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Intention.cs",
+              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Intention.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Intention.cs",
+              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Intention.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Model\\Intention.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T19:03:52.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameActionTrigger.cs",
+              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\GameActionTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameActionTrigger.cs",
+              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\GameActionTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameActionTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T18:55:37.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Buff.cs",
               "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Buff.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Buff.cs",
               "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Buff.cs",
               "RelativeToolTip": "Assets\\Scripts\\Model\\Buff.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCcAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAUwC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-08T16:11:28.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BuffData.cs",
               "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\BuffData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\BuffData.cs",
@@ -47,18 +81,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Data\\BuffData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T16:10:39.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T16:10:39.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BuffSystem.cs",
               "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\BuffSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\BuffSystem.cs",
               "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\BuffSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\BuffSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-08T12:53:21.073Z",
               "EditorCaption": ""

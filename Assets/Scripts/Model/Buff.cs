@@ -29,7 +29,7 @@ public class Buff
         for (int i = 0; i < Data.Triggers.Count; i++)
         {
             GameActionTrigger trigger = Data.Triggers[i];
-            ReactionToken token = ActionSystem.SubscribeReaction(trigger.ActionType, trigger.timing, (GameAction gameAction) => Register(gameAction, trigger));
+            ReactionToken token = ActionSystem.SubscribeReaction(trigger.ActionType, trigger.timing, (GameAction gameAction) => RegisterTrigger(gameAction, trigger));
             handles.Add(token);
         }
 
@@ -54,11 +54,12 @@ public class Buff
         }
     }
 
-    private void Register(GameAction gameAction, GameActionTrigger trigger)
+    private void RegisterTrigger(GameAction gameAction, GameActionTrigger trigger)
     {
         EffectContext ctx = new EffectContext(gameAction);
 
         trigger.TryBind(gameAction, ctx);
+        ctx.Vars["holder"] = Holder;
 
         PerformEffectGA performEffectGA = new(trigger.wrappers, Holder, null, ctx);
         ActionSystem.Instance.AddReaction(performEffectGA);
