@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\system\\entitysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\entitysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +24,9 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Intention.cs",
               "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Intention.cs",
               "RelativeToolTip": "Assets\\Scripts\\Model\\Intention.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-11T07:58:08.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EntitySystem.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\EntitySystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\EntitySystem.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\EntitySystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\System\\EntitySystem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:49:47.875Z",
               "EditorCaption": ""
             }
           ]

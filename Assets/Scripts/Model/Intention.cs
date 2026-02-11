@@ -7,7 +7,8 @@ public class Intention
 {
     public string intentionID { get; private set; }
     public ExposeType exposeType { get; private set; }
-    public string attackDesc { get; private set; }
+    public int attackTimes { get; private set; }
+    public int attack { get; private set; }
     public List<WrappedEffects> toDo { get; private set; }
     public string goToID { get; private set; }
 }

@@ -3,52 +3,8 @@
   "WorkspaceRootPath": "E:\\Unity\\MySlay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\data\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\leveldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\data\\carddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\carddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|e:\\unity\\myslay\\assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\buff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\data\\entitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\entitydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\data\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\model\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\system\\playersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\playersystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\model\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\hero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\system\\entitysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\entitysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\model\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\data\\herodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\herodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|E:\\Unity\\MySlay\\assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD00D19E-6D48-40DD-25F8-48CA7B42F837}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\model\\intention.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,149 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LevelData.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\LevelData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\LevelData.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\LevelData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\LevelData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Title": "Intention.cs",
+              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Intention.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Intention.cs",
+              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Intention.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Model\\Intention.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:26:52.017Z",
+              "WhenOpened": "2026-02-11T07:58:08.149Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Buff.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Buff.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Buff.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Buff.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Model\\Buff.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA2wEcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:21:45.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CardData.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\CardData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\CardData.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\CardData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\CardData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:12:06.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Manager\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Manager\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:02:42.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EntitySystem.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\EntitySystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\EntitySystem.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\EntitySystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\System\\EntitySystem.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwCUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:02:05.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerSystem.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\PlayerSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\PlayerSystem.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\System\\PlayerSystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\System\\PlayerSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:01:48.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Enemy.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Model\\Enemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:00:58.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Hero.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Hero.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Hero.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Hero.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Model\\Hero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:00:16.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Entity.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\Entity.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Model\\Entity.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Model\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T06:59:21.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EnemyData.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\EnemyData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EnemyData.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\EnemyData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EnemyData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T06:48:53.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HeroData.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\HeroData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\HeroData.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\HeroData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\HeroData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T06:48:32.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EntityData.cs",
-              "DocumentMoniker": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\EntityData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EntityData.cs",
-              "ToolTip": "E:\\Unity\\MySlay\\Assets\\Scripts\\Data\\EntityData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EntityData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T06:45:25.493Z"
             }
           ]
         }
