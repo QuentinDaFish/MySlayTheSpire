@@ -43,6 +43,7 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
         Entity.HealthChanged += OnHealthChanged;
         Entity.Dead += OnDead;
         Entity.BuffChanged += OnBuffChanged;
+        Entity.IntentionChanged += OnIntentionChanged;
     }
     private void OnDisable()
     {
@@ -50,6 +51,7 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
 
         Entity.HealthChanged -= OnHealthChanged;
         Entity.Dead -= OnDead;
+        Entity.BuffChanged -= OnBuffChanged;
     }
 
     
@@ -111,7 +113,13 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
             }
         }
     }
-
+    public void OnIntentionChanged(Intention intention)
+    {
+        if (intention == null)
+        {
+            return;
+        }
+    }
 
     public void OnPointerEnter()
     {

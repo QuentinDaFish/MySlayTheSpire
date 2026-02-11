@@ -12,31 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782efca19a299244c8ffb7126e496327, type: 3}
   m_Name: Defend
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  CardID: 2
-  CardName: "\u9632\u5FA1"
-  Desc: "\u83B7\u5F97{block}\u70B9\u683C\u6321"
-  Image: {fileID: 0}
-  CardType: 1
-  Rarity: 0
-  Mana: 1
-  Stats:
+  <CardID>k__BackingField: Defend_R
+  <CardName>k__BackingField: Defend
+  <Desc>k__BackingField: "\u83B7\u5F97{block}\u70B9\u683C\u6321"
+  <Image>k__BackingField: {fileID: 0}
+  <CardType>k__BackingField: 1
+  <Rarity>k__BackingField: 0
+  <Mana>k__BackingField: 1
+  <Stats>k__BackingField:
   - id: block
     value: 5
     type: 2
-  Wrappers:
+  <Wrappers>k__BackingField:
   - targetMode: 5
     effects:
-    - rid: 5643456886353428605
+    - rid: 5643456990345953399
   references:
     version: 2
     RefIds:
-    - rid: 5643456886353428605
+    - rid: 5643456990345953399
       type: {class: AddBlockEffect, ns: , asm: Assembly-CSharp}
       data:
         <amount>k__BackingField:
-          rid: 5643456924677832798
+          rid: 5643456990345953400
         <fromCard>k__BackingField: 1
-    - rid: 5643456924677832798
+    - rid: 5643456990345953400
       type: {class: ValueInt, ns: , asm: Assembly-CSharp}
       data:
         id: block

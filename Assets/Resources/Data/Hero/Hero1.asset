@@ -9,10 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0acfe04ee0fc2b24abcd9caa67adf4c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 326f1058a8b694c41926436e241eb295, type: 3}
   m_Name: Hero1
-  m_EditorClassIdentifier: Assembly-CSharp::EntityData
-  EntityName: Hero1
-  Desc: just hero1
-  Image: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  MaxHealth: 100
+  m_EditorClassIdentifier: Assembly-CSharp::HeroData
+  <EntityName>k__BackingField: Warrior
+  <Desc>k__BackingField: warrior
+  <Image>k__BackingField: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  <MaxHealth>k__BackingField: 77
+  <HeroType>k__BackingField: 0
+  <Deck>k__BackingField:
+  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
+  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
+  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
+  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
+  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
+  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: 13f8ddeaef31696458fb970f17fd11a9, type: 2}

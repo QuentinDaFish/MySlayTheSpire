@@ -6,7 +6,7 @@ public class PlayerSystem : Singleton<PlayerSystem>
 {
     public static event Action<int> DeckChanged;
 
-    public Entity Hero { get; private set; }
+    public Hero Hero { get; private set; }
     public List<Card> Deck { get; private set; } = new();
     public int Money { get; private set; }
 
@@ -17,7 +17,11 @@ public class PlayerSystem : Singleton<PlayerSystem>
         DeckChanged = null;
     }
 
-    public void SetHero(Entity hero) => Hero = hero;
+    public void SetHero(Hero hero)
+    {
+        Hero = hero;
+        foreach (CardData cardData in ((HeroData)hero.Data).Deck) AddCard(new Card(cardData));
+    }
     public void AddCard(Card card)
     {
         Deck.Add(card);

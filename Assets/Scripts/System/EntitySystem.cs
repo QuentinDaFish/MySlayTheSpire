@@ -8,13 +8,24 @@ public class EntitySystem : Singleton<EntitySystem>
 
     private void OnEnable()
     {
+        ActionSystem.AttachPerfomer<EnemyActionGA>(EnemyActionPerformer);
         ActionSystem.AttachPerfomer<ChangeEntityStatsGA>(ChangeEntityStatsPerformer);
     }
     private void OnDisable()
     {
+        ActionSystem.DetachPerfomer<EnemyActionGA>();
         ActionSystem.DetachPerfomer<ChangeEntityStatsGA>();
     }
 
+    public IEnumerator EnemyActionPerformer(EnemyActionGA enemyActionGA)
+    {
+        Enemy enemy = enemyActionGA.Enemy;
+        Intention intention = enemy.currentIntention;
+
+
+
+        yield return null;
+    }
     public IEnumerator ChangeEntityStatsPerformer(ChangeEntityStatsGA changeEntityStatsGA)
     {
         float attackMultiplier = changeEntityStatsGA.AttackMultiplier;
@@ -32,19 +43,19 @@ public class EntitySystem : Singleton<EntitySystem>
         yield return null;
     }
 
-    public void SetupHero(EntityData heroData)
+    public void SetupHero(HeroData heroData)
     {
-        Entity hero = new(heroData, Faction.Hero);
+        Hero hero = new(heroData);
         PlayerSystem.Instance.SetHero(hero);
         EntityManager.Instance.CreateEntity(hero, GameManager.Instance.heroPoint.position);
     }
-    public void SetupEnemies(List<EntityData> enemyDatas)
+    public void SetupEnemies(List<EnemyData> enemyDatas)
     {
         enemies.Clear();
         int count = enemyDatas.Count;
         for (int i = 0; i < count; i++)
         {
-            Entity enemy = new(enemyDatas[i], Faction.Enemy);
+            Enemy enemy = new(enemyDatas[i]);
             enemies.Add(enemy);
             EntityManager.Instance.CreateEntity(enemy, GameManager.Instance.enemyPoints[i].position);
         }

@@ -5,15 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Data/Card")]
 public class CardData : ScriptableObject
 {
-    [field: SerializeField] public int CardID;
-    [field: SerializeField] public string CardName;
-    [field: SerializeField] public string Desc;
-    [field: SerializeField] public Sprite Image;
-    [field: SerializeField] public CardType CardType;
-    [field: SerializeField] public Rarity Rarity;
-    [field: SerializeField] public int Mana;
-    [field: SerializeField] public List<StatData> Stats;
-    [field: SerializeField] public List<WrappedEffects> Wrappers;
+    [field: SerializeField] public string CardID { get; private set; }
+    [field: SerializeField] public string CardName { get; private set; }
+    [field: SerializeField] public string Desc { get; private set; }
+    [field: SerializeField] public Sprite Image { get; private set; }
+    [field: SerializeField] public CardType CardType { get; private set; }
+    [field: SerializeField] public Rarity Rarity { get; private set; }
+    [field: SerializeField] public int Mana { get; private set; }
+    [field: SerializeField] public List<StatData> Stats { get; private set; }
+    [field: SerializeField] public List<WrappedEffects> Wrappers { get; private set; }
 }
 
 public enum CardType

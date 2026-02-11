@@ -9,7 +9,7 @@ public class CardSystem : Singleton<CardSystem>
     public static event Action<int> discardPileChanged;
 
     [SerializeField] private string dataPath;
-    private Dictionary<int, CardData> cardDataMap = new();
+    private Dictionary<string, CardData> cardDataMap = new();
 
     public readonly List<Card> drawPile = new();
     public readonly List<Card> discardPile = new();

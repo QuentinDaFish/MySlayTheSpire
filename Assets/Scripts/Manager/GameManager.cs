@@ -8,9 +8,8 @@ public class GameManager : Singleton<GameManager>
     [Header("¡Ÿ ±±‰¡ø")]
     public Transform heroPoint;
     public List<Transform> enemyPoints;
-    public List<EntityData> enemyDatas = new();
-    public EntityData heroData;
-    public List<CardData> CardDatas = new();
+    public List<EnemyData> enemyDatas = new();
+    public HeroData heroData;
 
     public static event Action<int, int> ManaChanged;
 
@@ -31,8 +30,6 @@ public class GameManager : Singleton<GameManager>
     {
         EntitySystem.Instance.SetupHero(heroData);
         EntitySystem.Instance.SetupEnemies(enemyDatas);
-
-        foreach (CardData cardData in CardDatas) PlayerSystem.Instance.AddCard(new Card(cardData));
 
         maxManaInTurn = 3;
 
@@ -99,7 +96,7 @@ public class GameManager : Singleton<GameManager>
         List<Entity> enemies = EntityManager.Instance.GetEntity(TargetMode.AllEnemy);
         foreach(Entity enemy in enemies)
         {
-            EnemyActionGA enemyActionGA = new(enemy);
+            EnemyActionGA enemyActionGA = new((Enemy)enemy);
             ActionSystem.Instance.AddReaction(enemyActionGA);
         }
         yield return null;

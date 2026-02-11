@@ -12,44 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 782efca19a299244c8ffb7126e496327, type: 3}
   m_Name: Bash
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  CardID: 3
-  CardName: "\u75DB\u51FB"
-  Desc: "\u9020\u6210{attack}\u70B9\u4F24\u5BB3\uFF0C\u7ED9\u4E88{buff}\u5C42\u6613\u4F24"
-  Image: {fileID: 0}
-  CardType: 0
-  Rarity: 0
-  Mana: 2
-  Stats:
+  <CardID>k__BackingField: Bash
+  <CardName>k__BackingField: Bash
+  <Desc>k__BackingField: "\u9020\u6210{attack}\u70B9\u4F24\u5BB3\uFF0C\u540C\u65F6\u7ED9\u4E88{buff}\u5C42\u6613\u4F24"
+  <Image>k__BackingField: {fileID: 0}
+  <CardType>k__BackingField: 0
+  <Rarity>k__BackingField: 0
+  <Mana>k__BackingField: 2
+  <Stats>k__BackingField:
   - id: attack
     value: 8
     type: 1
   - id: buff
     value: 2
     type: 0
-  Wrappers:
+  <Wrappers>k__BackingField:
   - targetMode: 2
     effects:
-    - rid: 5643456896547684358
-    - rid: 5643456896547684359
+    - rid: 5643456990345953395
+    - rid: 5643456990345953397
   references:
     version: 2
     RefIds:
-    - rid: 5643456896547684358
+    - rid: 5643456990345953395
       type: {class: AttackEffect, ns: , asm: Assembly-CSharp}
       data:
         <damage>k__BackingField:
-          rid: 5643456924677832792
-    - rid: 5643456896547684359
+          rid: 5643456990345953396
+    - rid: 5643456990345953396
+      type: {class: ValueInt, ns: , asm: Assembly-CSharp}
+      data:
+        id: attack
+    - rid: 5643456990345953397
       type: {class: AddBuffEffect, ns: , asm: Assembly-CSharp}
       data:
         <buffType>k__BackingField: 4
         <stack>k__BackingField:
-          rid: 5643456924677832794
-    - rid: 5643456924677832792
-      type: {class: ValueInt, ns: , asm: Assembly-CSharp}
-      data:
-        id: attack
-    - rid: 5643456924677832794
+          rid: 5643456990345953398
+    - rid: 5643456990345953398
       type: {class: ValueInt, ns: , asm: Assembly-CSharp}
       data:
         id: buff

@@ -68,16 +68,17 @@ public class Buff
     {
         if (ClearType == BuffClearType.Forever) return;
 
-        void DoClear()
+        void DoClear(Faction faction)
         {
+            if (faction != Holder.Faction) return;
             int amount = (ClearType == BuffClearType.ClearBegin || ClearType == BuffClearType.ClearOver) ? Stack : 1;
             ActionSystem.Instance.AddReaction(new RemoveBuffGA(BuffType, amount, new List<Entity> { Holder }));
         }
 
         if (ClearType == BuffClearType.TurnBegin || ClearType == BuffClearType.ClearBegin)
-            handles.Add(ActionSystem.SubscribeReaction<TurnBeginGA>(_ => DoClear(), ReactionTiming.Pre));
+            handles.Add(ActionSystem.SubscribeReaction<TurnBeginGA>((turnBeginGA) => DoClear(turnBeginGA.Faction), ReactionTiming.Pre));
         else
-            handles.Add(ActionSystem.SubscribeReaction<TurnOverGA>(_ => DoClear(), ReactionTiming.Pre));
+            handles.Add(ActionSystem.SubscribeReaction<TurnOverGA>((turnOverGA) => DoClear(turnOverGA.Faction), ReactionTiming.Pre));
     }
 }
 

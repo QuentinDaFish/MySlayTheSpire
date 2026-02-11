@@ -8,8 +8,6 @@ public class EntityManager : Singleton<EntityManager>
     public EntityView hero { get; private set; }
     public readonly List<EntityView> enemies = new();
 
-    
-
     public EntityView CreateEntity(Entity entity, Vector2 pos)
     {
         EntityView view = Instantiate(entityViewPrefab, transform);

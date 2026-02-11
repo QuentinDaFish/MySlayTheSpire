@@ -5,12 +5,11 @@ using UnityEngine;
 [Serializable]
 public class Intention
 {
-    [field: SerializeField] public string intentionID;
-    [field: SerializeField] public ExposeType exposeType;
-    [field: SerializeField] public bool multiAttack;
-    [field: SerializeField] public Effect attack;
-    [field: SerializeField] public List<WrappedEffects> toDo;
-    [field: SerializeField] public string goToID;
+    public string intentionID { get; private set; }
+    public ExposeType exposeType { get; private set; }
+    public string attackDesc { get; private set; }
+    public List<WrappedEffects> toDo { get; private set; }
+    public string goToID { get; private set; }
 }
 
 public enum ExposeType

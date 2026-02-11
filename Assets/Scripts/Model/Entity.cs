@@ -7,6 +7,7 @@ public class Entity
     public event Action Dead;
     public event Action<float, float> HealthChanged;
     public event Action<Buff> BuffChanged;
+    public event Action<Intention> IntentionChanged;
 
     public EntityData Data { get; private set; }
     public string EntityName => Data.EntityName;

@@ -9,10 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0acfe04ee0fc2b24abcd9caa67adf4c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 96b62b1b97ac3e8428e5bcef4a5fcca2, type: 3}
   m_Name: Enemy2
-  m_EditorClassIdentifier: Assembly-CSharp::EntityData
-  EntityName: enemy2
-  Desc: just enemy2
-  Image: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  MaxHealth: 48
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  <EntityName>k__BackingField: Enemy2
+  <Desc>k__BackingField: Enemy2
+  <Image>k__BackingField: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  <MaxHealth>k__BackingField: 48
+  <Stats>k__BackingField: []
+  <FirstIntentionID>k__BackingField: 
+  <Intentions>k__BackingField: []
+  references:
+    version: 2
+    RefIds: []

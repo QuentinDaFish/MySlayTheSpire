@@ -169,21 +169,10 @@ MonoBehaviour:
   - {fileID: 1099426006}
   - {fileID: 418071637}
   enemyDatas:
-  - {fileID: 11400000, guid: 27bdc2d7bfb6ecc4dbacb8c598b2c96a, type: 2}
-  - {fileID: 11400000, guid: d218e2f27bcd8ca40b5d207322711449, type: 2}
-  - {fileID: 11400000, guid: 27bdc2d7bfb6ecc4dbacb8c598b2c96a, type: 2}
-  heroData: {fileID: 11400000, guid: 15a90df7a4c9de94993ffbbc89dccb5b, type: 2}
-  CardDatas:
-  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
-  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
-  - {fileID: 11400000, guid: 13f8ddeaef31696458fb970f17fd11a9, type: 2}
-  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
-  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
-  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
-  - {fileID: 11400000, guid: 233cdcac22a4acf4eb151858d51fb634, type: 2}
-  - {fileID: 11400000, guid: 13f8ddeaef31696458fb970f17fd11a9, type: 2}
-  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
-  - {fileID: 11400000, guid: 52ab5955ecf825a44864a2ee6af801ed, type: 2}
+  - {fileID: 11400000, guid: a7dbb29563918d8458d61b766697eea8, type: 2}
+  - {fileID: 11400000, guid: 80ccae46a153a6c47916282d90ec9246, type: 2}
+  - {fileID: 11400000, guid: a7dbb29563918d8458d61b766697eea8, type: 2}
+  heroData: {fileID: 11400000, guid: 0e73f45870a449e4dac202639f3a3970, type: 2}
   currentMana: 0
 --- !u!1 &50055366
 GameObject:

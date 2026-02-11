@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class EnemyActionGA : GameAction
 {
-    public Entity Enemy;
+    public Enemy Enemy;
     //
-    public EnemyActionGA(Entity enemy)
+    public EnemyActionGA(Enemy enemy)
     {
         Enemy = enemy;
     }
