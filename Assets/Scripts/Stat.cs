@@ -1,31 +1,23 @@
 using System;
 using UnityEngine;
 
+[Serializable]
 public class Stat
 {
-    public int BaseValue;
-    public StatType Type;
+    [field: SerializeField] public string id { get; private set; }
+    [field: SerializeField] public int value { get; private set; }
+    [field: SerializeField] public StatType type { get; private set; } = StatType.Generic;
 
-    private int addition;
-
-    public Stat(int baseValue, StatType type)
+    public Stat Clone()
     {
-        BaseValue = baseValue;
-        Type = type;
+        return new Stat
+        {
+            id = this.id,
+            value = this.value,
+            type = this.type
+        };
     }
-
-    public void SetAddition(int amount) => addition = amount;
-    public void ChangeAddition(int amount) => SetAddition(addition + amount);
-
-    public int GetValue() => BaseValue + addition;
-}
-
-[Serializable]
-public class StatData
-{
-    [field: SerializeField] public string id;
-    [field: SerializeField] public int value;
-    [field: SerializeField] public StatType type = StatType.Generic;
+    public int GetValue() => value;
 }
 
 public enum StatType

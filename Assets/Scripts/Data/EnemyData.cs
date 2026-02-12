@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyData : EntityData
 {
     [Header("Intention")]
-    [field: SerializeField] public List<StatData> Stats { get; private set; }
+    [field: SerializeField] public List<Stat> Stats { get; private set; }
     [field: SerializeField] public string FirstIntentionID { get; private set; }
     [field: SerializeField] public List<Intention> Intentions { get; private set; }
 }

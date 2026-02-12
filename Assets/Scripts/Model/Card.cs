@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 
 public class Card
@@ -31,12 +32,11 @@ public class Card
 
         for (int i = 0; i < Data.Stats.Count; i++)
         {
-            StatData statData = Data.Stats[i];
-            Stat stat = new(statData.value, statData.type);
-            StatMap[statData.id] = stat;
+            Stat stat = Data.Stats[i].Clone();
+            StatMap[stat.id] = stat;
         }
     }
-    public string GetDesc(Entity target = null)
+    public string GetDesc(Entity target = null, bool preview = true)
     {
         var sb = new StringBuilder(Desc);
 
@@ -46,21 +46,24 @@ public class Card
             Stat stat = kv.Value;
             if (stat == null || string.IsNullOrWhiteSpace(id)) continue;
 
-            int baseValue = stat.BaseValue;
-            int finalValue = stat.GetValue();
+            int baseValue = stat.GetValue();
+            int finalValue = baseValue;
 
-            if (stat.Type == StatType.Attack)
+            if (preview)
             {
-                Entity caster = PlayerSystem.Instance.Hero;
-                finalValue += caster.GetBuffStack(BuffType.Strength);
-                finalValue = (int)(finalValue * (1f + caster.attackMultiplier));
-                if (target != null) finalValue = (int)(finalValue * (1f + target.fragileMultipllier));
-            }
-            else if (stat.Type == StatType.Block)
-            {
-                Entity caster = PlayerSystem.Instance.Hero;
-                finalValue += caster.GetBuffStack(BuffType.Dexterity);
-                finalValue = (int)(finalValue * (1f + caster.blockMultiplier));
+                if (stat.type == StatType.Attack)
+                {
+                    Entity caster = PlayerSystem.Instance.Hero;
+                    finalValue += caster.GetBuffStack(BuffType.Strength);
+                    finalValue = (int)(finalValue * (1f + caster.attackMultiplier));
+                    if (target != null) finalValue = (int)(finalValue * (1f + target.fragileMultipllier));
+                }
+                else if (stat.type == StatType.Block)
+                {
+                    Entity caster = PlayerSystem.Instance.Hero;
+                    finalValue += caster.GetBuffStack(BuffType.Dexterity);
+                    finalValue = (int)(finalValue * (1f + caster.blockMultiplier));
+                }
             }
 
             string color = finalValue > baseValue ? "#34C759" : finalValue < baseValue ? "#FF3B30" : "#FFFFFF";

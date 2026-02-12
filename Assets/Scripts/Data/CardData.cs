@@ -12,7 +12,7 @@ public class CardData : ScriptableObject
     [field: SerializeField] public CardType CardType { get; private set; }
     [field: SerializeField] public Rarity Rarity { get; private set; }
     [field: SerializeField] public int Mana { get; private set; }
-    [field: SerializeField] public List<StatData> Stats { get; private set; }
+    [field: SerializeField] public List<Stat> Stats { get; private set; }
     [field: SerializeField] public List<WrappedEffects> Wrappers { get; private set; }
 }
 
