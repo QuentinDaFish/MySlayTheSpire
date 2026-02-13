@@ -18,6 +18,7 @@ public class Stat
         };
     }
     public int GetValue() => value;
+    public int ChangeValue(int amount) => value += amount;
 }
 
 public enum StatType

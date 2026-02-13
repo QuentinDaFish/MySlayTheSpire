@@ -20,12 +20,12 @@ MonoBehaviour:
   <Rarity>k__BackingField: 0
   <Mana>k__BackingField: 2
   <Stats>k__BackingField:
-  - id: attack
-    value: 8
-    type: 1
-  - id: buff
-    value: 2
-    type: 0
+  - <id>k__BackingField: attack
+    <value>k__BackingField: 8
+    <type>k__BackingField: 1
+  - <id>k__BackingField: buff
+    <value>k__BackingField: 2
+    <type>k__BackingField: 0
   <Wrappers>k__BackingField:
   - targetMode: 2
     effects:

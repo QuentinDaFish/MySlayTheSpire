@@ -80,7 +80,7 @@ public class CardSystem : Singleton<CardSystem>
         Entity caster = EntityManager.Instance.hero.Entity;
 
         EffectContext ctx = new EffectContext(playCardGA);
-        foreach (var kv in card.StatMap) ctx.Vars[kv.Key] = kv.Value.GetValue();
+        foreach (var kv in card.Stats) ctx.Vars[kv.Key] = kv.Value.GetValue();
 
         PerformEffectGA performEffectGA = new(card.Wrappers, caster, target, ctx);
         ActionSystem.Instance.AddReaction(performEffectGA);

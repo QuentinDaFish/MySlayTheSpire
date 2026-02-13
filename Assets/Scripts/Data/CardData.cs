@@ -14,6 +14,8 @@ public class CardData : ScriptableObject
     [field: SerializeField] public int Mana { get; private set; }
     [field: SerializeField] public List<Stat> Stats { get; private set; }
     [field: SerializeField] public List<WrappedEffects> Wrappers { get; private set; }
+    [field: SerializeField] public int MaxLevel { get; private set; }
+    [field: SerializeField] public List<CardUpgrade> Upgrades { get; private set; }
 }
 
 public enum CardType

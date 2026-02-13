@@ -20,9 +20,9 @@ MonoBehaviour:
   <Rarity>k__BackingField: 0
   <Mana>k__BackingField: 1
   <Stats>k__BackingField:
-  - id: attack
-    value: 6
-    type: 1
+  - <id>k__BackingField: attack
+    <value>k__BackingField: 6
+    <type>k__BackingField: 1
   <Wrappers>k__BackingField:
   - targetMode: 2
     effects:
