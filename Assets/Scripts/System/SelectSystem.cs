@@ -14,12 +14,17 @@ public class SelectSystem : Singleton<SelectSystem>
 
     private void Update()
     {
+        PlayHandle();
+    }
+
+    public void PlayHandle()
+    {
         if (selectedHand != null)
         {
             if (!(selectedHand.Card.NeedTarget && readyToPlay)) selectedHand.MoveTo(PointerSystem.Instance.MousePos());
 
             Vector2 mousePos = PointerSystem.Instance.MousePos();
-            
+
             if (mousePos.y > readyLine && !readyToPlay)
             {
                 if (GameManager.Instance.CurrentMana < selectedHand.Card.Mana)
@@ -32,7 +37,7 @@ public class SelectSystem : Singleton<SelectSystem>
                 if (!selectedHand.Card.NeedTarget) playable = true;
                 else selectedHand.MoveTo(aimPoint.position);
             }
-            else if(mousePos.y < readyLine && readyToPlay)
+            else if (mousePos.y < readyLine && readyToPlay)
             {
                 if (!selectedHand.Card.NeedTarget)
                 {

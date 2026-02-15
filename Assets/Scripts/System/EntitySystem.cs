@@ -20,9 +20,23 @@ public class EntitySystem : Singleton<EntitySystem>
     public IEnumerator EnemyActionPerformer(EnemyActionGA enemyActionGA)
     {
         Enemy enemy = enemyActionGA.Enemy;
+
+        if (enemy.isDead) yield break;
+
         Intention intention = enemy.currentIntention;
+        List<Entity> targets = new() { PlayerSystem.Instance.Hero };
+  
+        for (int i = 0; i < intention.attackTimes; i++)
+        {
+            AttackGA attackGA = new(intention.damage, targets, enemy);
+            ActionSystem.Instance.AddReaction(attackGA);
+        }
 
-
+        if (intention.toDo != null && intention.toDo.Count > 0)
+        {
+            PerformEffectGA performEffectGA = new(intention.toDo, enemy);
+            ActionSystem.Instance.AddReaction(performEffectGA);
+        }
 
         yield return null;
     }

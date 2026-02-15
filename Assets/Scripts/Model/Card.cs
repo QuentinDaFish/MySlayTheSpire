@@ -17,6 +17,7 @@ public class Card
     public bool NeedTarget => Data.Wrappers.Count != 0 ? Data.Wrappers.Any(wrapper => wrapper.targetMode == TargetMode.Target) : false;
     public Dictionary<string, Stat> Stats;
     public List<WrappedEffects> Wrappers => Data.Wrappers;
+    public bool ExhaustAfterPlay => Data.ExhaustAfterPlay;
     public int MaxLevel => Data.MaxLevel;
     public int Level = 0;
     public Card(CardData data)
@@ -30,7 +31,6 @@ public class Card
     private void GenerateStatMap()
     {
         Stats = new Dictionary<string, Stat>(Data.Stats?.Count ?? 0);
-
         if (Data.Stats == null) return;
 
         for (int i = 0; i < Data.Stats.Count; i++)
@@ -90,6 +90,8 @@ public class Card
 
             sb.Replace("{" + id + "}", $"<color={color}>{finalValue}</color>");
         }
+
+        if (ExhaustAfterPlay) sb.Append("\nÏûºÄ");
 
         return sb.ToString();
     }

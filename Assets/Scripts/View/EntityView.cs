@@ -20,6 +20,8 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
     [Space]
     [SerializeField] private BuffUI buffUIPrefab;
     [SerializeField] private RectTransform buffBar;
+    [Space]
+    [SerializeField] private PreviewUI previewUI;
 
     public Entity Entity { get; private set; }
 
@@ -43,18 +45,17 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
         Entity.HealthChanged += OnHealthChanged;
         Entity.Dead += OnDead;
         Entity.BuffChanged += OnBuffChanged;
-        Entity.IntentionChanged += OnIntentionChanged;
+        Entity.PreviewChanged += OnPreviewChanged;
     }
     private void OnDisable()
     {
         if (Entity == null) return;
 
-        Entity.HealthChanged -= OnHealthChanged;
+        Entity.HealthChanged -= OnHealthChanged; 
         Entity.Dead -= OnDead;
         Entity.BuffChanged -= OnBuffChanged;
+        Entity.PreviewChanged -= OnPreviewChanged;
     }
-
-    
 
     public void OnHealthChanged(float current, float max)
     {
@@ -113,13 +114,7 @@ public class EntityView : MonoBehaviour, IPointerEnter, IPointerExit
             }
         }
     }
-    public void OnIntentionChanged(Intention intention)
-    {
-        if (intention == null)
-        {
-            return;
-        }
-    }
+    public void OnPreviewChanged(ExposeType type, int attackTimes, int attack) => previewUI.UpdateUI(type, attackTimes, attack);
 
     public void OnPointerEnter()
     {

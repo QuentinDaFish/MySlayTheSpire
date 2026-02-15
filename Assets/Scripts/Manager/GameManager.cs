@@ -62,6 +62,13 @@ public class GameManager : Singleton<GameManager>
     {
         CardSystem.Instance.Setup(PlayerSystem.Instance.Deck);
 
+        List<Entity> enemies = EntityManager.Instance.GetEntity(TargetMode.AllEnemy);
+        foreach (Enemy enemy in enemies)
+        {
+            Intention intention = enemy.GetIntention(enemy.EnemyData.FirstIntentionID);
+            enemy.ChangeIntention(intention);
+        }
+
         yield return null;
     }
     public IEnumerator LevelOverPerformer(LevelOverGA levelOverGA)
@@ -87,6 +94,15 @@ public class GameManager : Singleton<GameManager>
         {
             DiscardAllHandsGA discardAllHandsGA = new();
             ActionSystem.Instance.AddReaction(discardAllHandsGA);
+        }
+        else if(faction == Faction.Enemy)
+        {
+            List<Entity> enemies = EntityManager.Instance.GetEntity(TargetMode.AllEnemy);
+            foreach (Enemy enemy in enemies)
+            {
+                Intention intention = enemy.GetNextIntention();
+                enemy.ChangeIntention(intention);
+            }
         }
 
         yield return null;

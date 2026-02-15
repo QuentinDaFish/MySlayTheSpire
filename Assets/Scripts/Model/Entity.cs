@@ -7,14 +7,14 @@ public class Entity
     public event Action Dead;
     public event Action<float, float> HealthChanged;
     public event Action<Buff> BuffChanged;
-    public event Action<Intention> IntentionChanged;
+    public event Action<ExposeType, int, int> PreviewChanged;
 
-    public EntityData Data { get; private set; }
+    public EntityData Data { get; protected set; }
     public string EntityName => Data.EntityName;
     public string Desc => Data.Desc;
     public Sprite Image => Data.Image;
-    public int MaxHealth { get; private set; }
-    public Faction Faction { get; private set; }
+    public int MaxHealth { get; protected set; }
+    public Faction Faction { get; protected set; }
     private int currentHealth;
     public int CurrentHealth
     {
@@ -35,8 +35,9 @@ public class Entity
             }
         }
     }
-    public bool isDead { get; private set; }
+    public bool isDead { get; protected set; }
     public readonly Dictionary<BuffType, Buff> buffs = new();
+    public Intention currentIntention { get; protected set; }
 
     public float attackMultiplier;
     public float blockMultiplier;
@@ -75,6 +76,26 @@ public class Entity
     {
         if (buffs.TryGetValue(buffType, out var buff)) return buff.Stack;
         return 0;
+    }
+    public void UpdatePreview()
+    {
+        if (currentIntention == null) PreviewChanged?.Invoke(ExposeType.None, 0, 0);
+        // if player should not see, also pass None.
+
+        Intention intention = currentIntention;
+        ExposeType type = intention.exposeType;
+        int attackTimes = intention.attackTimes;
+        int damage = intention.damage;
+
+        if (attackTimes > 0)
+        {  
+            Entity target = PlayerSystem.Instance.Hero;
+            damage += GetBuffStack(BuffType.Strength);
+            damage = (int)(damage * (1f + attackMultiplier));
+            if (target != null) damage = (int)(damage * (1f + target.fragileMultipllier));
+        }
+
+        PreviewChanged?.Invoke(type, attackTimes, damage);
     }
 }
 

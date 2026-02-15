@@ -20,13 +20,16 @@ MonoBehaviour:
   <Rarity>k__BackingField: 0
   <Mana>k__BackingField: 1
   <Stats>k__BackingField:
-  - <id>k__BackingField: 5
+  - <id>k__BackingField: block
     <value>k__BackingField: 5
     <type>k__BackingField: 2
   <Wrappers>k__BackingField:
   - targetMode: 5
     effects:
     - rid: 5643456990345953399
+  <ExhaustAfterPlay>k__BackingField: 0
+  <MaxLevel>k__BackingField: 0
+  <Upgrades>k__BackingField: []
   references:
     version: 2
     RefIds:

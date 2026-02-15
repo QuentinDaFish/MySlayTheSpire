@@ -12,13 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b62b1b97ac3e8428e5bcef4a5fcca2, type: 3}
   m_Name: Enemy2
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  <EntityID>k__BackingField: 
   <EntityName>k__BackingField: Enemy2
   <Desc>k__BackingField: Enemy2
   <Image>k__BackingField: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   <MaxHealth>k__BackingField: 48
-  <Stats>k__BackingField: []
-  <FirstIntentionID>k__BackingField: 
-  <Intentions>k__BackingField: []
+  <FirstIntentionID>k__BackingField: attack1
+  <Intentions>k__BackingField:
+  - <intentionID>k__BackingField: attack1
+    <exposeType>k__BackingField: 2
+    <attackTimes>k__BackingField: 1
+    <damage>k__BackingField: 8
+    <toDo>k__BackingField: []
+    <goToID>k__BackingField: attack2
+  - <intentionID>k__BackingField: attack2
+    <exposeType>k__BackingField: 2
+    <attackTimes>k__BackingField: 1
+    <damage>k__BackingField: 16
+    <toDo>k__BackingField: []
+    <goToID>k__BackingField: attack1
   references:
     version: 2
     RefIds: []

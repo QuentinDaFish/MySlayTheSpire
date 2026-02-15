@@ -25,6 +25,8 @@ public class CardSystem : Singleton<CardSystem>
         ActionSystem.AttachPerfomer<DiscardAllHandsGA>(DiscardAllHandsPerformer);
         ActionSystem.AttachPerfomer<ShuffleGA>(ShufflePerformer);
         ActionSystem.AttachPerfomer<PlayCardGA>(PlayCardPerformer);
+        ActionSystem.AttachPerfomer<ExhaustCardGA>(ExhaustCardPerformer);
+        ActionSystem.AttachPerfomer<DiscardCardGA>(DiscardCardPerformer);
     }
     private void OnDisable()
     {
@@ -35,6 +37,8 @@ public class CardSystem : Singleton<CardSystem>
         ActionSystem.DetachPerfomer<DiscardAllHandsGA>();
         ActionSystem.DetachPerfomer<ShuffleGA>();
         ActionSystem.DetachPerfomer<PlayCardGA>();
+        ActionSystem.DetachPerfomer<ExhaustCardGA>();
+        ActionSystem.DetachPerfomer<DiscardCardGA>();
     }
 
     public IEnumerator DrawHandsAtStartPerformer(DrawHandsAtStartGA drawHandsAtStartGA)
@@ -85,6 +89,28 @@ public class CardSystem : Singleton<CardSystem>
         PerformEffectGA performEffectGA = new(card.Wrappers, caster, target, ctx);
         ActionSystem.Instance.AddReaction(performEffectGA);
 
+        if (card.ExhaustAfterPlay)
+        {
+            ExhaustCardGA exhaustCardGA = new(card);
+            ActionSystem.Instance.AddReaction(exhaustCardGA);
+        }
+
+        yield return null;
+    }
+    public IEnumerator ExhaustCardPerformer(ExhaustCardGA exhaustCardGA)
+    {
+        Card card = exhaustCardGA.Card;
+
+        if (!hands.Contains(card)) yield break;
+        hands.Remove(card);
+        //
+
+        yield return null;
+    }
+    public IEnumerator DiscardCardPerformer(DiscardCardGA discardCardGA)
+    {
+        Card card = discardCardGA.Card;
+        DiscardHand(card);
         yield return null;
     }
 
@@ -122,13 +148,11 @@ public class CardSystem : Singleton<CardSystem>
         SelectSystem.Instance.SelectHand(null);
 
         PlayCardGA playCardGA = new(card, target);
-        ActionSystem.Instance.Perform(playCardGA);
-
-        DiscardHand(card);
+        ActionSystem.Instance.Perform(playCardGA, () => DiscardHand(card));
     }
     public void DiscardHand(Card card)
     {
-        if (card == null) return;
+        if (card == null || !hands.Contains(card)) return;
 
         hands.Remove(card);
 
