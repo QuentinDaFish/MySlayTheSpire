@@ -13,22 +13,22 @@ public class EffectSystem : Singleton<EffectSystem>
         ActionSystem.DetachPerfomer<PerformEffectGA>();
     }
 
-    public IEnumerator PerformEffectPerformer(PerformEffectGA ga)
+    public IEnumerator PerformEffectPerformer(PerformEffectGA performEffectGA)
     {
-        var caster = ga.Caster;
-        var ctx = ga.Ctx;
+        Entity caster = performEffectGA.Caster;
+        EffectContext ctx = performEffectGA.Ctx;
 
-        foreach (var wrapped in ga.Wrapper)
+        foreach (WrappedEffects wrappedEffects in performEffectGA.Wrapper)
         {
             List<Entity> targets = new();
 
-            if (wrapped.targetMode == TargetMode.Caster) targets.Add(caster);
-            else if (wrapped.targetMode == TargetMode.Target) targets.Add(ga.Target);
-            else targets.AddRange(EntityManager.Instance.GetEntity(wrapped.targetMode));
+            if (wrappedEffects.targetMode == TargetMode.Caster) targets.Add(caster);
+            else if (wrappedEffects.targetMode == TargetMode.Target) targets.Add(performEffectGA.Target);
+            else targets.AddRange(EntityManager.Instance.GetEntity(wrappedEffects.targetMode));
 
-            foreach (var effect in wrapped.effects)
+            foreach (Effect effect in wrappedEffects.effects)
             {
-                var next = effect.GetGameAction(ctx, targets, caster);
+                GameAction next = effect.GetGameAction(ctx, targets, caster);
                 if (next != null) ActionSystem.Instance.AddReaction(next);
             }
         }

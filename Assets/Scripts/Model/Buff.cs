@@ -20,6 +20,7 @@ public class Buff
     {
         Data = data;
     }
+
     private readonly List<ReactionToken> handles = new();
     public void Add(Entity holder)
     {
@@ -60,10 +61,10 @@ public class Buff
         EffectContext ctx = new EffectContext(gameAction);
 
         trigger.TryBind(gameAction, ctx);
-        ctx.Vars["holder"] = Holder;
-        ctx.Vars["stack"] = Stack;
+        ctx.Set("holder", Holder);
+        ctx.Set("stack", Stack);
 
-        PerformEffectGA performEffectGA = new(trigger.wrappers, Holder, null, ctx);
+        PerformEffectGA performEffectGA = new(trigger.wrappers, Holder, ctx.Get<Entity>("caster"), ctx);
         ActionSystem.Instance.AddReaction(performEffectGA);
     }
     private void SubscribeClear()

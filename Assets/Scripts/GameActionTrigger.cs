@@ -23,8 +23,8 @@ public class OnAttackTrigger : GameActionTrigger
     public override void TryBind(GameAction gameAction, EffectContext ctx)
     {
         AttackGA attackGA = (AttackGA)gameAction;
-        ctx.Vars[damage] = attackGA.Damage;
-        ctx.Vars[caster] = attackGA.Caster;
-        ctx.Vars[targets] = attackGA.Targets;
+        ctx.Set(damage, attackGA.Damage);
+        ctx.Set(caster, attackGA.Caster);
+        ctx.Set(targets, attackGA.Targets);
     }
 }
